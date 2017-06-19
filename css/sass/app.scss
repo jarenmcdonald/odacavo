@@ -1,0 +1,247 @@
+//SASS File - Restaurant Temp
+
+
+/*Variables*/
+$primaryColour: #97C992;
+$secondaryColour: #729464;
+$highlightColour: #B0D5E7;
+
+$backgroundColour: #FFF;
+$buttonColour: #d6b69c;
+
+
+/*Body*/
+
+
+/*Overall Classes*/
+body {
+	font-size: 16px;
+	background-color: $backgroundColour;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.hidden {
+	display: none;
+}
+
+.fullWidth {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: initial;
+}
+
+a {
+	-webkit-transition: all ease .2s;
+	-moz-transition: all ease .2s;
+	-o-transition: all ease .2s;
+	transition: all ease .2s;
+	color: $buttonColour;
+}
+
+a:hover {
+	color: lighten($buttonColour, 25%);
+}
+
+.boxModel {
+	height: 150px;
+	background-color: black;
+}
+
+
+/*INDEX*/
+
+
+/*Nav Elements*/
+
+#mainNav {
+	background-color: rgba(255,255,255,.85);
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	top: 0;
+	height: 100px;
+	-webkit-box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.56);
+  	-moz-box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.56);
+  	box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.56);
+}
+
+#logo {
+	width: 100px;
+	float: left;
+}
+
+#hamburgerNav {
+	float: right;
+	max-width: 50px;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+#menuContent {
+	display: none;
+}
+
+#menuContent.open {
+	display: block;
+}
+
+#mainNav ul {
+	clear: both;
+	background-color: rgba(255,255,255,.85);
+	list-style-type: none;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.56);
+	box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.56);
+}
+
+#mainNav ul li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #CCC;
+}
+
+#mainNav ul li a {
+	color: $secondaryColour;
+  	-webkit-transition: all ease.2s;
+  	-moz-transition: all ease .2s;
+  	-o-transition: all ease .2s;
+  	transition: all ease.2s;
+}
+
+#mainNav ul li a:hover {
+	color: lighten($secondaryColour, 25%);
+}
+
+/*End of Nav*/
+
+/*Image Slider*/
+
+#sliderCon {
+	margin-top: 100px;
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 0;
+	background-color: black;
+}
+
+#imageSlider {
+	padding: 0;
+	height:  100%;
+}
+
+/*End of Image Slider*/
+
+/*Information Blocks*/
+
+#blockCon {
+	margin-bottom: 20px;
+	padding-left: auto;
+	padding-right: auto;
+	text-align: center;
+}
+
+.blockStyle {
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all .5s ease;
+
+	h2 {
+		color: #FFF;
+		font-weight: bold;
+		text-align: center;
+		line-height: 300px;
+		font-size: 2.5em;
+		text-shadow: 3px 3px 12px #000;
+	}
+}
+
+.blockStyle:hover {
+	transform: scale(1.03);
+	filter: grayscale(80%);
+}
+
+#menuBlock {
+	background-image: url("../images/image2.png");
+}
+
+#reservationsBlock {
+	background-image: url("../images/image3.jpg");
+}
+
+#storyBlock {
+	background-image: url("../images/image4.jpeg");
+}
+
+#contactBlock {
+	background-image: url("../images/image5.png");
+}
+
+/*End of Information Blocks*/
+
+/*Start of Footer*/
+
+/*End of Footer*/
+
+#footerCon {
+	background-color: #262626;
+}
+
+#backTop {
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	h2 {
+		font-weight: bold;
+	}
+}
+
+#footerNav {
+	display: none;
+}
+
+#socialIcons {
+	display: none;
+}
+
+
+
+@media screen and(min-width: 40em) {
+
+#backTop {
+	display: none;
+}
+
+#footerNav {
+	display: block;
+
+	ul {
+		margin-top: 10px;
+		padding-top: 5px;
+	}
+
+	li {
+		display: inline-block;
+		margin-right: 25px;
+	}
+
+	li:last-child {
+		margin-right: 0px;
+	}
+}
+
+#socialIcons {
+	display: block;
+}
+
+}
