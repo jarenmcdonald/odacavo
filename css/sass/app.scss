@@ -1,4 +1,4 @@
-//SASS File - Restaurant Temp
+//SASS File - Odacavo Site
 
 
 /*Variables*/
@@ -9,6 +9,8 @@ $highlightColour: #B0D5E7;
 $backgroundColour: #FFF;
 $buttonColour: #d6b69c;
 
+$bodyFont: 'PT Serif', serif;
+$headerFont: 'Nunito', sans-serif;
 
 /*Body*/
 
@@ -20,6 +22,7 @@ body {
 	padding: 0;
 	margin: 0;
 	overflow-x: hidden;
+	font-family: $bodyFont;
 }
 
 .hidden {
@@ -48,6 +51,10 @@ a:hover {
 .boxModel {
 	height: 150px;
 	background-color: black;
+}
+
+h2 {
+	font-family: $headerFont;
 }
 
 
@@ -114,6 +121,7 @@ a:hover {
   	-moz-transition: all ease .2s;
   	-o-transition: all ease .2s;
   	transition: all ease.2s;
+	font-family: $headerFont;
 }
 
 #mainNav ul li a:hover {
@@ -153,6 +161,7 @@ a:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: all .5s ease;
+	font-family: $headerFont;
 
 	h2 {
 		color: #FFF;
@@ -200,6 +209,7 @@ a:hover {
 	padding-top: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	font-family: $headerFont;
 
 	h2 {
 		font-weight: bold;
@@ -237,6 +247,10 @@ a:hover {
 
 	li:last-child {
 		margin-right: 0px;
+	}
+
+	a {
+		font-family: $bodyFont;
 	}
 }
 
