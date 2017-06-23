@@ -3,11 +3,12 @@
 /*Overall Classes*/
 body {
   font-size: 16px;
+  color: #373737;
   background-color: #FFF;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "PT Serif", serif; }
+  font-family: "PT Serif", "Times New Roman", serif; }
 
 .hidden {
   display: none; }
@@ -23,17 +24,21 @@ a {
   -moz-transition: all ease .2s;
   -o-transition: all ease .2s;
   transition: all ease .2s;
-  color: #d6b69c; }
+  color: #1AA5D9; }
 
 a:hover {
-  color: #fbf8f6; }
+  color: #82d2f0; }
 
 .boxModel {
   height: 150px;
   background-color: black; }
 
 h2 {
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", "Helvetia", sans-serif;
+  color: #373737; }
+
+ul {
+  margin: 0 auto; }
 
 /*INDEX*/
 /*Nav Elements*/
@@ -43,19 +48,22 @@ h2 {
   width: 100%;
   z-index: 1;
   top: 0;
-  height: 100px;
+  height: 75px;
   -webkit-box-shadow: 0px 3px 18px -5px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: 0px 3px 18px -5px rgba(0, 0, 0, 0.56);
   box-shadow: 0px 3px 18px -5px rgba(0, 0, 0, 0.56); }
 
 #logo {
-  width: 100px;
-  float: left; }
+  width: 60%;
+  max-width: 300px;
+  float: left;
+  margin-left: 25px;
+  margin-top: 19px; }
 
 #hamburgerNav {
   float: right;
-  max-width: 50px;
-  margin-top: 25px;
+  max-width: 40px;
+  margin-top: 22px;
   margin-right: 25px; }
 
 #menuContent {
@@ -83,106 +91,247 @@ h2 {
   border-bottom: solid 1px #CCC; }
 
 #mainNav ul li a {
-  color: #729464;
+  color: #F3F3F3;
   -webkit-transition: all ease 0.2s;
   -moz-transition: all ease .2s;
   -o-transition: all ease .2s;
   transition: all ease 0.2s;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", "Helvetia", sans-serif; }
 
 #mainNav ul li a:hover {
-  color: #b6c9af; }
+  color: white; }
 
 /*End of Nav*/
 /*Image Slider*/
 #sliderCon {
-  margin-top: 100px;
+  margin-top: 75px;
   margin-bottom: 20px;
+  height: 150px;
   width: 100%;
   padding: 0;
-  background-color: black; }
+  background-color: #373737; }
 
 #imageSlider {
   padding: 0;
-  height: 100%; }
+  height: 150px;
+  width: 100%;
+  background-color: #373737; }
 
 /*End of Image Slider*/
 /*Information Blocks*/
 #blockCon {
   margin-bottom: 20px;
+  margin-top: 80px;
   padding-left: auto;
   padding-right: auto;
   text-align: center; }
 
-.blockStyle {
+.infoBoxes {
+  margin-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center; }
+  .infoBoxes h2 {
+    font-family: "Nunito", "Helvetia", sans-serif;
+    font-size: 1.8em;
+    color: #1187B3; }
+  .infoBoxes p {
+    font-family: "PT Serif", "Times New Roman", serif;
+    font-size: 1em;
+    color: #373737; }
+
+.infoTextBox {
+  padding-left: 40px;
+  padding-right: 40px; }
+
+.infoCircles {
   height: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 300px;
+  margin-bottom: 25px;
+  border-radius: 250px;
+  background-color: #F3F3F3;
   transition: all .5s ease;
-  font-family: "Nunito", sans-serif; }
-  .blockStyle h2 {
-    color: #FFF;
+  font-family: "Nunito", "Helvetia", sans-serif; }
+  .infoCircles h2 {
+    color: #F3F3F3;
     font-weight: bold;
     text-align: center;
     line-height: 300px;
     font-size: 2.5em;
     text-shadow: 3px 3px 12px #000; }
 
-.blockStyle:hover {
+.infoCircles:hover {
   transform: scale(1.03);
   filter: grayscale(80%); }
 
-#menuBlock {
-  background-image: url("../images/image2.png"); }
-
-#reservationsBlock {
-  background-image: url("../images/image3.jpg"); }
-
-#storyBlock {
-  background-image: url("../images/image4.jpeg"); }
-
-#contactBlock {
-  background-image: url("../images/image5.png"); }
-
 /*End of Information Blocks*/
+/*Start of Contact Form*/
+#contactFormCon {
+  border-top: 1px solid #e0e0e0;
+  padding: 15px;
+  margin-top: 30px; }
+
+#contactForm #contactTitle {
+  font-family: "Nunito", "Helvetia", sans-serif;
+  font-size: 2.25em; }
+
+#submitButton {
+  width: 100%; }
+
+#contactSubmit {
+  text-align: center;
+  font-size: 2em; }
+
+/*End of Contact Form*/
 /*Start of Footer*/
-/*End of Footer*/
 #footerCon {
-  background-color: #262626; }
+  background-color: #373737;
+  padding-top: 20px; }
 
 #backTop {
   text-align: center;
   padding-top: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", "Helvetia", sans-serif; }
   #backTop h2 {
-    font-weight: bold; }
+    font-weight: bold;
+    color: #1187B3;
+    font-size: 2em;
+    -webkit-transition: all ease .2s;
+    -moz-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease .2s; }
+  #backTop h2:hover {
+    color: #6ccdf1; }
 
 #footerNav {
-  display: none; }
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px; }
+  #footerNav ul li {
+    font-family: "Nunito", "Helvetia", sans-serif;
+    font-size: 2.125em; }
+  #footerNav a {
+    color: #1187B3; }
+  #footerNav a:hover {
+    color: #6ccdf1; }
 
 #socialIcons {
-  display: none; }
+  display: none;
+  margin-bottom: 20px; }
 
+#copyright {
+  font-family: "Nunito", "Helvetia", sans-serif;
+  font-size: 1.25em;
+  color: #1187B3;
+  text-align: center;
+  margin-top: 30px; }
+  #copyright p {
+    margin-bottom: 10px; }
+
+/*End of Footer*/
 @media screen and (min-width: 40em) {
-  #backTop {
-    display: none; }
+  /*Start of Header*/
+  #logo {
+    width: 300px; }
+
+  #hamburgerNav {
+    margin-top: 25px; }
+
+  /*End of Header*/
+  /*Start of Information Blocks*/
+  .infoBoxes h2 {
+    font-size: 2.5em; }
+  .infoBoxes p {
+    font-size: 1.25em; }
+
+  /*End of Information Blocks*/
+  /*Start of Footer*/
+  #footerCon {
+    padding-top: 0px; }
+    #footerCon #backTop {
+      display: none; }
+    #footerCon #copyright {
+      margin-top: 0px; }
 
   #footerNav {
-    display: block; }
+    margin-top: 10px;
+    margin-bottom: 0px; }
     #footerNav ul {
       margin-top: 10px;
       padding-top: 5px; }
-    #footerNav li {
-      display: inline-block;
-      margin-right: 25px; }
-    #footerNav li:last-child {
-      margin-right: 0px; }
-    #footerNav a {
-      font-family: "PT Serif", serif; }
+      #footerNav ul li {
+        display: inline-block;
+        margin-right: 25px;
+        font-size: 2em;
+        text-align: center; }
+      #footerNav ul li:last-child {
+        margin-right: 0px; }
 
   #socialIcons {
-    display: block; } }
+    display: block; }
+
+  /* End of Footer*/ }
+@media screen and (min-width: 64em) {
+  /*Start of Header*/
+  #mainNav {
+    height: 50px; }
+    #mainNav #logo {
+      width: 175px;
+      margin-top: 12px; }
+    #mainNav #hamburgerNav {
+      display: none; }
+    #mainNav #menuContent {
+      display: block;
+      width: 50%;
+      float: right; }
+    #mainNav ul {
+      background-color: rgba(255, 255, 255, 0);
+      padding-top: 12px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      text-align: right;
+      padding-right: 25px; }
+    #mainNav ul li {
+      display: inline-block;
+      margin-right: 25px;
+      border-bottom: none;
+      padding: 0px; }
+    #mainNav ul li:last-child {
+      margin-right: 0px; }
+    #mainNav ul li a {
+      color: #373737;
+      font-size: 1.125em; }
+    #mainNav ul li a:hover {
+      color: #aaaaaa;
+      border-bottom: 1px solid #1187B3; }
+
+  /*End of Header*/
+  /*Start of Image Slider*/
+  #sliderCon {
+    margin-top: 50px; }
+
+  /*End of Image Slider*/
+  /*Start of Footer*/
+  #footerCon {
+    padding-top: 0px; }
+    #footerCon #copyright {
+      font-size: 1em; }
+
+  #footerNav {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+    #footerNav ul {
+      margin: 0px;
+      margin-left: 50px; }
+      #footerNav ul li {
+        font-size: 1.5em;
+        margin-right: 50px;
+        text-align: left; }
+
+  /*End of Footer*/ }
 
 /*# sourceMappingURL=app.css.map */

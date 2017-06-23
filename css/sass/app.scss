@@ -2,15 +2,16 @@
 
 
 /*Variables*/
-$primaryColour: #97C992;
-$secondaryColour: #729464;
-$highlightColour: #B0D5E7;
+$primaryColour: #373737;
+$secondaryColour: #F3F3F3;
+$accentColour: #1187B3;
+$lightGrey: #939393;
 
 $backgroundColour: #FFF;
-$buttonColour: #d6b69c;
+$buttonColour: #1AA5D9;
 
-$bodyFont: 'PT Serif', serif;
-$headerFont: 'Nunito', sans-serif;
+$bodyFont: 'PT Serif', 'Times New Roman', serif;
+$headerFont: 'Nunito', 'Helvetia', sans-serif;
 
 /*Body*/
 
@@ -18,6 +19,7 @@ $headerFont: 'Nunito', sans-serif;
 /*Overall Classes*/
 body {
 	font-size: 16px;
+	color: $primaryColour;
 	background-color: $backgroundColour;
 	padding: 0;
 	margin: 0;
@@ -55,6 +57,11 @@ a:hover {
 
 h2 {
 	font-family: $headerFont;
+	color: $primaryColour;
+}
+
+ul {
+	margin: 0 auto;
 }
 
 
@@ -69,21 +76,24 @@ h2 {
 	width: 100%;
 	z-index: 1;
 	top: 0;
-	height: 100px;
+	height: 75px;
 	-webkit-box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.56);
   	-moz-box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.56);
   	box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.56);
 }
 
 #logo {
-	width: 100px;
+	width: 60%;
+	max-width: 300px;
 	float: left;
+	margin-left: 25px;
+	margin-top: 19px;
 }
 
 #hamburgerNav {
 	float: right;
-	max-width: 50px;
-	margin-top: 25px;
+	max-width: 40px;
+	margin-top: 22px;
 	margin-right: 25px;
 }
 
@@ -133,16 +143,19 @@ h2 {
 /*Image Slider*/
 
 #sliderCon {
-	margin-top: 100px;
+	margin-top: 75px;
 	margin-bottom: 20px;
+	height: 150px;
 	width: 100%;
 	padding: 0;
-	background-color: black;
+	background-color: $primaryColour;
 }
 
 #imageSlider {
 	padding: 0;
-	height:  100%;
+	height:  150px;
+	width: 100%;
+	background-color: $primaryColour;
 }
 
 /*End of Image Slider*/
@@ -151,20 +164,47 @@ h2 {
 
 #blockCon {
 	margin-bottom: 20px;
+	margin-top: 80px;
 	padding-left: auto;
 	padding-right: auto;
 	text-align: center;
 }
 
-.blockStyle {
+.infoBoxes {
+	margin-bottom: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+
+	h2{
+		font-family: $headerFont;
+		font-size: 1.8em;
+		color: $accentColour;
+	}
+
+	p {
+		font-family: $bodyFont;
+		font-size: 1em;
+		color: $primaryColour;
+	}
+}
+
+.infoTextBox {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.infoCircles {
 	height: 300px;
-	background-repeat: no-repeat;
-	background-size: cover;
+	width: 300px;
+	margin-bottom: 25px;
+	border-radius: 250px;
+	background-color: $secondaryColour;
 	transition: all .5s ease;
 	font-family: $headerFont;
 
 	h2 {
-		color: #FFF;
+		color: $secondaryColour;
 		font-weight: bold;
 		text-align: center;
 		line-height: 300px;
@@ -173,35 +213,57 @@ h2 {
 	}
 }
 
-.blockStyle:hover {
+.infoCircles:hover {
 	transform: scale(1.03);
 	filter: grayscale(80%);
 }
 
-#menuBlock {
-	background-image: url("../images/image2.png");
+#webCircles {
+
 }
 
-#reservationsBlock {
-	background-image: url("../images/image3.jpg");
+#brandingCircle {
+
 }
 
-#storyBlock {
-	background-image: url("../images/image4.jpeg");
-}
+#marketingCircle {
 
-#contactBlock {
-	background-image: url("../images/image5.png");
 }
 
 /*End of Information Blocks*/
 
+
+/*Start of Contact Form*/
+
+#contactFormCon {
+	border-top: 1px solid lighten($lightGrey,30%);
+	padding: 15px;
+	margin-top: 30px;
+}
+
+#contactForm {
+	#contactTitle {
+		font-family: $headerFont;
+		font-size: 2.25em;
+	}
+}
+
+#submitButton {
+	width: 100%;
+}
+
+#contactSubmit {
+	text-align: center;
+	font-size: 2em;
+}
+
+/*End of Contact Form*/
+
 /*Start of Footer*/
 
-/*End of Footer*/
-
 #footerCon {
-	background-color: #262626;
+	background-color: $primaryColour;
+	padding-top: 20px;
 }
 
 #backTop {
@@ -213,49 +275,230 @@ h2 {
 
 	h2 {
 		font-weight: bold;
+		color: $accentColour;
+		font-size: 2em;
+		-webkit-transition: all ease .2s;
+		-moz-transition: all ease .2s;
+		-o-transition: all ease .2s;
+		transition: all ease .2s;
+	}
+
+	h2:hover {
+		color: lighten($accentColour,30%);
 	}
 }
 
 #footerNav {
-	display: none;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 30px;
+
+	ul li {
+		font-family: $headerFont;
+		font-size: 2.125em;
+	}
+
+	a {
+		color: $accentColour;
+	}
+
+	a:hover {
+		color: lighten($accentColour,30%);
+	}
 }
 
 #socialIcons {
 	display: none;
+	margin-bottom: 20px;
 }
+
+#copyright {
+	font-family: $headerFont;
+	font-size: 1.25em;
+	color: $accentColour;
+	text-align: center;
+	margin-top: 30px;
+
+	p {
+		margin-bottom: 10px;
+	}
+}
+
+
+/*End of Footer*/
 
 
 
 @media screen and(min-width: 40em) {
 
-#backTop {
-	display: none;
+
+/*Start of Header*/
+
+#logo {
+	width: 300px;
+}
+
+#hamburgerNav {
+	margin-top: 25px;
+}
+
+/*End of Header*/
+
+
+/*Start of Information Blocks*/
+
+.infoBoxes {
+	h2 {
+		font-size: 2.5em;
+	}
+	p {
+		font-size: 1.25em;
+	}
+}
+
+/*End of Information Blocks*/
+
+
+/*Start of Footer*/
+
+#footerCon {
+	padding-top: 0px;
+
+	#backTop {
+		display: none;
+	}
+
+	#copyright {
+		margin-top: 0px;
+	}
 }
 
 #footerNav {
-	display: block;
+	margin-top: 10px;
+	margin-bottom: 0px;
 
 	ul {
 		margin-top: 10px;
 		padding-top: 5px;
-	}
 
-	li {
-		display: inline-block;
-		margin-right: 25px;
-	}
+		li {
+			display: inline-block;
+			margin-right: 25px;
+			font-size: 2em;
+			text-align: center;
+		}
 
-	li:last-child {
-		margin-right: 0px;
-	}
-
-	a {
-		font-family: $bodyFont;
+		li:last-child {
+			margin-right: 0px;
+		}
 	}
 }
 
 #socialIcons {
 	display: block;
 }
+
+/* End of Footer*/
+
+}
+
+
+
+@media screen and(min-width: 64em) {
+
+
+/*Start of Header*/
+
+#mainNav {
+	height: 50px;
+
+	#logo {
+		width: 175px;
+		margin-top: 12px;
+	}
+
+	#hamburgerNav {
+		display: none;
+	}
+
+	#menuContent {
+		display: block;
+		width: 50%;
+		float: right;
+	}
+
+	ul {
+	background-color: rgba(255,255,255,0);
+	padding-top: 12px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	text-align: right;
+	padding-right: 25px;
+	}
+
+	ul li {
+		display: inline-block;
+		margin-right: 25px;
+		border-bottom: none;
+		padding: 0px;
+	}
+
+	ul li:last-child {
+		margin-right: 0px;
+	}
+
+	ul li a {
+		color: $primaryColour;
+		font-size: 1.125em;
+	}
+
+	ul li a:hover {
+		color: lighten($primaryColour,45%);
+		border-bottom: 1px solid $accentColour;
+	}
+}
+
+/*End of Header*/
+
+
+/*Start of Image Slider*/
+
+#sliderCon {
+	margin-top: 50px;
+}
+
+/*End of Image Slider*/
+
+
+/*Start of Footer*/
+
+#footerCon {
+	padding-top: 0px;
+
+	#copyright {
+		font-size: 1em;
+	}
+}
+
+#footerNav {
+	text-align: left;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+	ul {
+		margin: 0px;
+		margin-left: 50px;
+
+	li {
+		font-size: 1.5em;
+		margin-right: 50px;
+		text-align: left;
+		}
+	}
+}
+
+/*End of Footer*/
+
 
 }
