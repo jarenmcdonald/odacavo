@@ -52,9 +52,9 @@
 
 				<a href="index.html"><img src="images/odacavoLogo.png" alt="Odacavo" id="logo"></a>
 
-				<a href="#"><img src="images/burger.png" alt="Menu" id="hamburgerNav"></a>
+				<a id="navToggle" href="#"><span></span></a>
 
-				<div id="menuContent">
+				<div id="menuContent" class="">
 					<ul id="navLinks">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
@@ -72,15 +72,23 @@
 		<section class="row" id="sliderCon">
 			<h1 class="hide">Image Slider</h1>
 
-			<!--Image Slider
-			<div class="small-12 columns" id="imageSlider">
-				<img src="images/image1.png" alt="Our Food">
-			End of Image Slider-->
-
-			</div>
 
 		</section>
 		<!--End of Image Slider-->
+
+
+		<!--Welcome Text-->
+		<section class="row" id="welcomeCon">
+			<h1 class="hide">Welcome Text</h1>
+
+			<div class="small-12 columns" id="welcomeText">
+				<h2>Sample Text</h2>
+				<p>Loreum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				</p>
+			</div>
+
+		</section>
+		<!--End of Welcome Text-->
 
 
 		<!--Start of Information Bocks-->
@@ -128,7 +136,7 @@
 				<form id="contactForm" action=" " method="post">
 					<h3 id="contactTitle">Let's Connect</h3>
 
-					<fieldset>
+					<fieldset class="fieldsetCon">
 						<input placeholder="Your name" type="text" tabindex="1" required autofocus>
 					</fieldset>
 
@@ -144,6 +152,7 @@
 				    	<button name="submit" type="submit" id="contactSubmit" data-submit="...Sending">Submit</button>
 				    </fieldset>
 
+				</form>
 			</div>
 		</section>
 

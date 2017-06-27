@@ -60,11 +60,58 @@ ul {
   margin-left: 25px;
   margin-top: 19px; }
 
+/*
 #hamburgerNav {
+	float: right;
+	max-width: 40px;
+	margin-top: 22px;
+	margin-right: 25px;
+	margin-bottom: 30px;
+}
+*/
+#navToggle {
+  position: absolute;
   float: right;
-  max-width: 40px;
-  margin-top: 22px;
-  margin-right: 25px; }
+  width: 40%;
+  height: 75px;
+  cursor: pointer; }
+
+#navToggle span {
+  position: absolute;
+  left: 35%;
+  top: 18px; }
+
+#navToggle span, #navToggle span:before, #navToggle span:after {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50px;
+  height: 4px;
+  width: 55px;
+  background: #515151;
+  display: block;
+  content: ' ';
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out; }
+
+#navToggle span:before {
+  top: 12px; }
+
+#navToggle span:after {
+  bottom: -24px; }
+
+#navToggle.active span {
+  background-color: transparent; }
+
+#navToggle.active span:before, #navToggle.active span:after {
+  top: 0px; }
+
+#navToggle.active span:before {
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+#navToggle.active span:after {
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
 
 #menuContent {
   display: none; }
@@ -74,11 +121,11 @@ ul {
 
 #mainNav ul {
   clear: both;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(0, 0, 0, 0.75);
   list-style-type: none;
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 0px;
   text-align: center;
   text-transform: uppercase;
   -webkit-box-shadow: 0px 3px 18px -5px rgba(0, 0, 0, 0.56);
@@ -88,10 +135,11 @@ ul {
 #mainNav ul li {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: solid 1px #CCC; }
+  border-bottom: 1px solid #6a6a6a; }
 
 #mainNav ul li a {
   color: #F3F3F3;
+  font-size: 1.875em;
   -webkit-transition: all ease 0.2s;
   -moz-transition: all ease .2s;
   -o-transition: all ease .2s;
@@ -99,7 +147,7 @@ ul {
   font-family: "Nunito", "Helvetia", sans-serif; }
 
 #mainNav ul li a:hover {
-  color: white; }
+  color: #55c5ef; }
 
 /*End of Nav*/
 /*Image Slider*/
@@ -118,10 +166,25 @@ ul {
   background-color: #373737; }
 
 /*End of Image Slider*/
+/*Start of Welcome Text*/
+#welcomeCon {
+  margin-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center; }
+  #welcomeCon h2 {
+    font-family: "Nunito", "Helvetia", sans-serif;
+    font-size: 3em;
+    color: #1187B3; }
+  #welcomeCon p {
+    font-family: "PT Serif", "Times New Roman", serif;
+    font-size: 1.25em; }
+
+/*End of Welcome Text*/
 /*Information Blocks*/
 #blockCon {
   margin-bottom: 20px;
-  margin-top: 80px;
+  margin-top: 40px;
   padding-left: auto;
   padding-right: auto;
   text-align: center; }
@@ -175,6 +238,7 @@ ul {
   font-family: "Nunito", "Helvetia", sans-serif;
   font-size: 2.25em; }
 
+.fieldsetCon
 #submitButton {
   width: 100%; }
 
@@ -211,7 +275,10 @@ ul {
   margin-top: 30px; }
   #footerNav ul li {
     font-family: "Nunito", "Helvetia", sans-serif;
-    font-size: 2.125em; }
+    font-size: 2.125em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+  #footerNav ul li:last-child {
+    border-bottom: none; }
   #footerNav a {
     color: #1187B3; }
   #footerNav a:hover {
@@ -240,6 +307,11 @@ ul {
     margin-top: 25px; }
 
   /*End of Header*/
+  /*Start of Welcome Text*/
+  #welcomeCon h2 {
+    font-size: 3.5em; }
+
+  /*End of Welcome Text*/
   /*Start of Information Blocks*/
   .infoBoxes h2 {
     font-size: 2.5em; }
@@ -314,9 +386,31 @@ ul {
     margin-top: 50px; }
 
   /*End of Image Slider*/
-  /*Start of Footer*/
+  /*Start of Welcome Text*/
+  #welcomeCon {
+    text-align: left;
+    padding-right: 40%; }
+    #welcomeCon h2 {
+      font-size: 4em; }
+    #welcomeCon p {
+      font-size: 1.125em; }
+
+  /*End of Welcome Text*/
+  /*Start of Information Bloks*/
+  #blockCon {
+    text-align: center; }
+
+  .infoTextBox h2 {
+    font-size: 1.5em; }
+  .infoTextBox p {
+    font-size: 1em; }
+
+  /*End of Information Blocks*/
+  /*Start of Contact Form*/
+  .fieldsetCon
   #footerCon {
     padding-top: 0px; }
+    .fieldsetCon
     #footerCon #copyright {
       font-size: 1em; }
 
