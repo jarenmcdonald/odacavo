@@ -352,7 +352,7 @@ ul {
     #mainNav #logo {
       width: 175px;
       margin-top: 12px; }
-    #mainNav #hamburgerNav {
+    #mainNav #navToggle {
       display: none; }
     #mainNav #menuContent {
       display: block;
