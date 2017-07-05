@@ -79,14 +79,14 @@ ul {
 #navToggle span {
   position: absolute;
   left: 35%;
-  top: 18px; }
+  top: 28px; }
 
 #navToggle span, #navToggle span:before, #navToggle span:after {
   position: absolute;
   cursor: pointer;
   border-radius: 50px;
   height: 4px;
-  width: 55px;
+  width: 40px;
   background: #515151;
   display: block;
   content: ' ';
@@ -94,10 +94,10 @@ ul {
   transition: all 500ms ease-in-out; }
 
 #navToggle span:before {
-  top: 12px; }
+  top: -10px; }
 
 #navToggle span:after {
-  bottom: -24px; }
+  bottom: -10px; }
 
 #navToggle.active span {
   background-color: transparent; }
