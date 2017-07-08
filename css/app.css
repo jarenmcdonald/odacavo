@@ -79,7 +79,7 @@ ul {
 #navToggle span {
   position: absolute;
   left: 35%;
-  top: 28px; }
+  top: 35px; }
 
 #navToggle span, #navToggle span:before, #navToggle span:after {
   position: absolute;
@@ -117,13 +117,15 @@ ul {
   display: none; }
 
 #menuContent.open {
-  display: block; }
+  display: block;
+  position: fixed;
+  top: 75px;
+  width: 100%; }
 
 #mainNav ul {
   clear: both;
-  background-color: rgba(0, 0, 0, 0.75);
   list-style-type: none;
-  margin: 0;
+  margin: 0px;
   padding-top: 5px;
   padding-bottom: 0px;
   text-align: center;
@@ -135,7 +137,15 @@ ul {
 #mainNav ul li {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #6a6a6a; }
+  border-bottom: 1px solid #6a6a6a;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  transition: all ease 0.2s; }
+
+#mainNav ul li:hover {
+  background-color: #0a526d; }
 
 #mainNav ul li a {
   color: #F3F3F3;
