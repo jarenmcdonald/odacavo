@@ -380,9 +380,12 @@ ul {
       display: inline-block;
       margin-right: 25px;
       border-bottom: none;
-      padding: 0px; }
+      padding: 0px;
+      background-color: transparent; }
     #mainNav ul li:last-child {
       margin-right: 0px; }
+    #mainNav ul li:hover {
+      background-color: transparent; }
     #mainNav ul li a {
       color: #373737;
       font-size: 1.125em; }

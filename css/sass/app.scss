@@ -554,10 +554,15 @@ ul {
 		margin-right: 25px;
 		border-bottom: none;
 		padding: 0px;
+		background-color: rgba(0,0,0,0);
 	}
 
 	ul li:last-child {
 		margin-right: 0px;
+	}
+
+	ul li:hover {
+		background-color: rgba(0,0,0,0);
 	}
 
 	ul li a {
